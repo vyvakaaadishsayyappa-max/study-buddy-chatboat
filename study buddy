@@ -1,0 +1,19 @@
+print("=== Study Buddy Chatbot ===")
+print("Hi! I am your Study Buddy. Type 'bye' to exit\n")
+
+while True:
+    user = input("You: ").lower()
+
+    if "hello" in user or "hi" in user:
+        print("Bot: Hey! Ready to study today? 😄")
+    elif "math" in user:
+        print("Bot: Math is fun! Practice 10 sums daily and you’ll top 10th.")
+    elif "python" in user:
+        print("Bot: Python is the language of AI. Keep coding 30 min daily!")
+    elif "bored" in user:
+        print("Bot: Take 5 min break, then solve 1 question. You got this!")
+    elif "bye" in user:
+        print("Bot: Bye! Study well and come back tomorrow.")
+        break
+    else:
+        print("Bot: I didn’t get that. Try 'math' or 'python' or 'bored'")
